@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Productos.css">
+    <link rel="stylesheet" type="text/css" href="Registrarse.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<link rel="icon" type="image/vnd.icon" href="Imagenes\favicon.ico" >
+    <title>Productos</title>
+</head>
+<body >
+    <header class="Header11">
+        <div class="links11">
+        <a href="index.html" class="Productos01" style="text-decoration: none;" >Inicio</a>
+        <a href="Contactos.html" class="Contactos01" style="text-decoration: none;">Contactos</a>
+        <a href="Productos.html" class="Registrarse01" style="text-decoration: none;">Productos</a>
+        </div>
+        <img src="Imagenes\Logo.jpg" alt="Logo marca" height="100px" width="200px" id="Imagen11">
+        <h1 id="Vacio"></h1>
+    </header>
+    <script src="validarFormulario.js"> </script>    
+<main class="Main21">
+    
+    <form action="" class="Formulario" onsubmit="return validateForm()">
+
+        <div class="Pregunta"> ME INTERESAN SUS PRODUCTOS </div>
+        <div id="ObtenerNombre0">
+        <label for="ObtenerNombre" >Nombre</label>
+    </div>
+        <input type="text" id="ObtenerNombre" name="Formulario"  >
+        <span id="errorNombre" class="error"></span>
+        <div id="ObtenerNombre0">
+        <label for="ObtenerApellido">Apellido</label>
+    </div>
+        <input type="text" id="ObtenerApellido" name="Formulario"  >
+        <span id="errorApellido" class="error"></span>
+        <div id="ObtenerNombre0">
+        <label for="Email">Email</label>
+    </div>
+        <input type="email" id="Email" name="Formulario"  >
+        <span id="errorEmail" class="error"></span>
+        <div id="ObtenerNombre0">
+        <label for="Celular">Celular</label>
+    </div>
+        <input type="" id="Celular" name="Formulario" >
+        <span id="errorTelefono" class="error"></span>
+        <div id="boton">
+        <input type="submit"  value="Quiero que me contacten" id="boton0">
+    </div>
+        
+    </form>
+    
+   
+</main>
+
+
+
+
+    <footer class="Footer00" >
+        <section class="Footer01">
+        <img src="Imagenes/LogoFacebook.png" alt="Logo Facebook" height="50px" width="50px" id="LogoFacebook">
+        <img src="Imagenes/LogoWhatsap.png" alt="Logo Whatsapp" height="50px" width="50px" id="LogoWhatsapp">
+        <img src="Imagenes/LogoInstagram.png" alt="Logo Instagram" height="50px" width="50px" id="LogoInstagram">
+        </section>
+        <section class="Footer002">
+            <p id="Derechos">&copy; Python-Front End 2023-1. Integrantes: Nahuel Balderramo, Yessica Pereira y Yutzura Marcano.<br>Todos los derechos reservados.</p>
+        </section>
+    </footer>
+</body>
+</html> 

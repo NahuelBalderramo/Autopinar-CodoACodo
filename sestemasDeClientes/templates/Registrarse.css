@@ -1,0 +1,134 @@
+.Main21{
+    padding: 50px;
+    background-color: #365622;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Pregunta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 25px;
+    margin-bottom: 50px;
+    background-color: #b9fb6e5e;
+    border-radius: 15px;
+    border: 4px solid aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #BAFB6E;
+    border-radius: 15px; 
+    background-color: #365622; 
+    width: 1000px;
+       
+}
+#ObtenerNombre0{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-bottom: 2px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#ObtenerNombre,#ObtenerApellido,#Email,#Celular{
+    color: rgb(97, 97, 97);
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 5px groove #6efb75;   
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#boton0{
+    background-color: #BAFB6E;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border:5px solid white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);  
+    transition: 0.5s;  
+      
+
+}
+
+@keyframes Enviar {
+    0%{
+        border:5px solid rgb(62, 231, 15);
+        color: rgb(62, 231, 15) ;
+        
+        
+    }
+    10%{
+        border:5px solid rgb(105, 227, 71);
+        color: rgb(105, 227, 71) ;
+    }
+    20%{
+        border:5px solid rgb(147, 223, 127);
+        color: rgb(147, 223, 127) ;
+    }
+    30%{
+        border:5px solid rgb(190, 225, 181);
+        color: rgb(190, 225, 181) ;
+ 
+    }
+    40%{
+        border:5px solid rgb(223, 223, 223);
+        color:rgb(223, 223, 223);
+
+    }
+    50%{
+        border:5px solid rgb(222, 225, 221);
+        color:rgb(222, 225, 221);
+    }
+    60%{
+        border:5px solid rgb(190, 225, 181);
+        color:rgb(190, 225, 181);
+    }
+    70%{
+        border:5px solid rgb(147, 223, 127);
+        color:rgb(147, 223, 127);
+    }
+    80%{
+        border:5px solid rgb(105, 227, 71);
+        color:rgb(105, 227, 71);
+    }
+    90%{
+        border:5px solid rgb(62, 231, 15);
+        color:rgb(62, 231, 15);
+    }
+    100%{
+        border:5px solid rgb(62, 231, 15);
+        color:rgb(62, 231, 15);
+        }
+}
+#boton0:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: white;
+    background-color: #0d100b;
+    border:5px solid rgb(62, 231, 15);
+    animation-name: Enviar;
+    animation-duration:0.5s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+}
+.error{
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}

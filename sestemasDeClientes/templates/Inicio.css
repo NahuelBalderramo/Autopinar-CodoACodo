@@ -1,0 +1,278 @@
+*{margin: 0px;
+}
+
+/*HEADEER*/
+.header01{
+    padding: 30px;
+    background-color: #BAFB6E;
+
+}
+.ody{    background-image: url(Imagenes/ImagenFondojpg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+    /*MAIN*/
+.Main01{
+ /*   background-color:#365622 ;*/
+    
+    background-color: rgb(0 0 0 / 59%);
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    ;
+}
+.Izquierda{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+#Titulo01{
+    
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    animation-name: AgrandarTitulo;
+    animation-duration: 1.5s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+}
+@keyframes AgrandarTitulo {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#Subtitulo01{
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(150, 150, 150);
+    font-size: 25px;
+    padding-bottom: 20px;
+    animation-name: AgrandarSubtitulo;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    
+}
+@keyframes AgrandarSubtitulo {
+    0%{
+        transform: scale(0);
+        
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#Logo01{
+    border-top-left-radius: 150px;
+border-top-right-radius: 150px;
+animation-name: ApareceLogo;
+animation-duration: 1s;
+animation-delay: 0;
+animation-iteration-count: 1;
+animation-direction:normal;
+opacity: calc(85%);
+}
+@keyframes ApareceLogo {
+    0%{
+        transform: scale(0);
+        transform: translateX(-700px);
+        
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.Derecha{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    }
+.Productos01,.Contactos01,.Registrarse01{
+    color: #BAFB6E;
+    font-size: 30px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid white;
+    padding: 20px;
+    transition: 0.3s;
+    animation-name: ApareceBotones;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    }
+    @keyframes ApareceBotones {
+        0%{
+            transform: scale(0);
+            transform: translateX(700px);
+            
+        }
+        100%{
+            transform: scale(1);
+            }
+}
+.Productos01:hover,.Contactos01:hover,.Registrarse01:hover{
+    color: #fefefe;
+    font-size: 50px;
+    margin-bottom: 2px;
+    border-bottom: 4px solid #BAFB6E;
+    padding: 20px;
+    transition: 0.5;
+}
+.Footer00{
+    display: flex;
+    flex-direction: column;
+    background-color: #BAFB6E;
+    padding: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.Footer01{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#LogoFacebook,#LogoWhatsapp,#LogoInstagram{
+    transform: rotate(0deg);
+    transition: 0.5s ;
+    
+}
+#LogoFacebook:hover{
+    transform: rotate(-45deg);
+    transition: 0.5s ;}
+    
+#LogoWhatsapp:hover{
+    transform: rotate(360deg);
+    transition: 0.5s ;}
+    
+#LogoInstagram:hover{
+    transform: rotate(45deg);
+    transition: 0.5s ;
+    
+}
+.Footer002{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* CSS para dispositivos móviles */
+
+/* Agregar estilos para hacer el header responsivo */
+@media screen and (max-width: 768px) {
+    .header01 {
+      padding: 15px;
+      height: auto;
+    }
+    
+    #Titulo01 {
+      font-size: 30px;
+    }
+    
+    #Subtitulo01 {
+      font-size: 20px;
+    }
+    
+    #Logo01 {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .Productos01,
+    .Contactos01,
+    .Registrarse01 {
+      font-size: 20px;
+      margin-bottom: 5px;
+      padding: 10px;
+    }
+    
+    .Productos01:hover,
+    .Contactos01:hover,
+    .Registrarse01:hover {
+      font-size: 25px;
+      margin-bottom: 5px;
+      padding: 10px;
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+  
+  /* Agregar estilos para hacer el main responsivo */
+  @media screen and (max-width: 768px) {
+    .Main01 {
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+    
+    .Izquierda {
+      margin-bottom: 20px;
+    }
+    
+    .Derecha {
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    
+    .Productos01,
+    .Contactos01,
+    .Registrarse01 {
+      font-size: 25px;
+      margin-bottom: 5px;
+      padding: 10px;
+    }
+    
+    .Productos01:hover,
+    .Contactos01:hover,
+    .Registrarse01:hover {
+      font-size: 30px;
+      margin-bottom: 5px;
+      padding: 10px;
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+  
+  /* Agregar estilos para hacer el footer responsivo */
+  @media screen and (max-width: 768px) {
+
+    .Footer00 { 
+      margin-top: auto;
+    }
+
+    .Footer01 {
+      margin-top: 20px;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    
+    #LogoFacebook,
+    #LogoWhatsapp,
+    #LogoInstagram {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .Footer002 {
+      font-size: 12px;
+      justify-content: center;
+    }
+  }
+  
